@@ -17,5 +17,8 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   # AeroSpace window manager configuration (shared across machines)
-  xdg.configFile."aerospace/aerospace.toml".source = ../../shared/aerospace/aerospace.toml;
+  xdg.configFile."aerospace/aerospace.toml" = {
+    source = ../../shared/aerospace/aerospace.toml;
+    force = true;  # Replace existing file
+  };
 }
