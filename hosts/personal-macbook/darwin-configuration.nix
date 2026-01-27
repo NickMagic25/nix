@@ -54,6 +54,7 @@
     # Additional taps
     taps = [
       "derailed/k9s"
+      "fluxcd/tap"
     ];
   };
 
