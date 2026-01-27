@@ -2,8 +2,8 @@
 { config, pkgs, ... }:
 
 {
-  # Enable experimental features
-  nix.settings.experimental-features = "nix-command flakes";
+  # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
+  nix.enable = false;
 
   # Set primary user for system defaults
   system.primaryUser = "nmajkic";
