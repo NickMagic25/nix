@@ -1,8 +1,12 @@
-# Home Manager configuration for Personal MacBook Pro
+# Home Manager configuration for Work Mac
 # To use this, import it in your main home-manager configuration
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ../../modules/aerospace/home.nix
+  ];
+
   # Home Manager needs a bit of information about you and the paths it should manage
   home.username = "nmajkic";
   home.homeDirectory = "/Users/nmajkic";
@@ -15,10 +19,4 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
-
-  # AeroSpace window manager configuration (shared across machines)
-  xdg.configFile."aerospace/aerospace.toml" = {
-    source = ../../modules/aerospace/aerospace.toml;
-    force = true;  # Replace existing file
-  };
 }

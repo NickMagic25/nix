@@ -2,8 +2,21 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ../../modules/aerospace
+  ];
+
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
   nix.enable = false;
+
+  # Enable and configure homebrew
+  homebrew = {
+    enable = true;
+    onActivation = {
+      autoUpdate = false;
+      cleanup = "none";  # Don't uninstall packages not in this config
+    };
+  };
 
   # Set primary user for system defaults
   system.primaryUser = "nmajkic";
