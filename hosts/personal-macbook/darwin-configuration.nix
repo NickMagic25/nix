@@ -41,12 +41,19 @@
       "terragrunt"
       "tree"
       "trivy"
+      "flux-operator-mcp"
+      "capacitor"
     ];
 
     # Homebrew casks (GUI applications)
     casks = [
       "codex"
       "git-credential-manager"
+    ];
+
+    # Additional taps
+    taps = [
+      "derailed/k9s"
     ];
   };
 
