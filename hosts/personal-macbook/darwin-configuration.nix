@@ -18,6 +18,14 @@
     };
   };
 
+  # Add Homebrew to PATH
+  environment.systemPath = [ "/opt/homebrew/bin" ];
+
+  # Shell aliases
+  environment.shellAliases = {
+    nix-reconcile = "nix run nix-darwin -- switch --flake ~/git/nix#personal-macbook";
+  };
+
   # Set primary user for system defaults
   system.primaryUser = "nmajkic";
 
