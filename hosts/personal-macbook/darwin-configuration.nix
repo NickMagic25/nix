@@ -5,8 +5,8 @@
   # Enable experimental features
   nix.settings.experimental-features = "nix-command flakes";
 
-  # Auto upgrade nix package and the daemon service
-  services.nix-daemon.enable = true;
+  # Set primary user for system defaults
+  system.primaryUser = "nmajkic";
 
   # System packages
   environment.systemPackages = with pkgs; [
