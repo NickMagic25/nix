@@ -21,10 +21,4 @@
     source = ../../modules/aerospace/aerospace.toml;
     force = true;  # Replace existing file
   };
-
-  # Zsh configuration (shared across machines)
-  home.file.".zshrc" = {
-    source = ../../modules/zshrc/.zshrc;
-    force = true;  # Replace existing file
-  };
 }

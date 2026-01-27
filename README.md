@@ -12,7 +12,7 @@ nix/
 │   └── personal-macbook/           # Personal MacBook Pro configuration
 │       ├── darwin-configuration.nix # macOS system configuration
 │       └── home.nix                 # Home Manager user configuration
-├── shared/                         # Shared configs across all machines
+├── modules/                         # Shared configs across all machines
 │   └── aerospace/
 │       └── aerospace.toml          # AeroSpace window manager config
 └── README.md
@@ -57,7 +57,7 @@ darwin-rebuild switch --flake ~/git/nix#personal-macbook
 1. Edit your configuration files:
    - System settings: `hosts/personal-macbook/darwin-configuration.nix`
    - User dotfiles: `hosts/personal-macbook/home.nix`
-   - Shared configs: `shared/`
+   - Shared configs: `modules/`
 
 2. Commit your changes to git:
    ```bash
