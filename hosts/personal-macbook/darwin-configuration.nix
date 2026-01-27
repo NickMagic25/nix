@@ -11,7 +11,6 @@
   # System packages
   environment.systemPackages = with pkgs; [
     vim
-    git
   ];
 
   # macOS system defaults
