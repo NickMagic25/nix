@@ -16,7 +16,7 @@
   # macOS system defaults
   system.defaults = {
     dock = {
-      autohide = true;
+      autohide = false;
       orientation = "bottom";
       show-recents = false;
     };
