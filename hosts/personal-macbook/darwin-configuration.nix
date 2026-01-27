@@ -13,9 +13,41 @@
   homebrew = {
     enable = true;
     onActivation = {
-      autoUpdate = false;
-      cleanup = "none";  # Don't uninstall packages not in this config
+      autoUpdate = true;
+      cleanup = "uninstall";  # Remove packages not in this config
     };
+
+    # Homebrew formulae (CLI tools)
+    brews = [
+      "age"
+      "bfg"
+      "flux"
+      "gemini-cli"
+      "gh"
+      "gnupg"
+      "go"
+      "helm"
+      "helmfile"
+      "k3d"
+      "k9s"
+      "kustomize"
+      "node"
+      "npq"
+      "openjdk"
+      "ripgrep"
+      "sops"
+      "talosctl"
+      "terraform"
+      "terragrunt"
+      "tree"
+      "trivy"
+    ];
+
+    # Homebrew casks (GUI applications)
+    casks = [
+      "codex"
+      "git-credential-manager"
+    ];
   };
 
   # Add Homebrew to PATH
