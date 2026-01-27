@@ -23,7 +23,7 @@
 
   # Shell aliases
   environment.shellAliases = {
-    nix-reconcile = "nix run nix-darwin -- switch --flake ~/git/nix#work-mac";
+    nix-reconcile = "sudo nix run nix-darwin -- switch --flake ~/git/nix#work-mac";
   };
 
   # Set primary user for system defaults
