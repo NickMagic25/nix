@@ -1,0 +1,51 @@
+# nix-darwin configuration for Personal MacBook Pro
+{ config, pkgs, ... }:
+
+{
+  # Enable experimental features
+  nix.settings.experimental-features = "nix-command flakes";
+
+  # Auto upgrade nix package and the daemon service
+  services.nix-daemon.enable = true;
+
+  # System packages
+  environment.systemPackages = with pkgs; [
+    vim
+    git
+  ];
+
+  # macOS system defaults
+  system.defaults = {
+    dock = {
+      autohide = true;
+      orientation = "bottom";
+      show-recents = false;
+    };
+
+    finder = {
+      AppleShowAllExtensions = true;
+      FXEnableExtensionChangeWarning = false;
+    };
+
+    NSGlobalDomain = {
+      AppleShowAllExtensions = true;
+      InitialKeyRepeat = 15;
+      KeyRepeat = 2;
+    };
+  };
+
+  # Keyboard and trackpad
+  system.keyboard = {
+    enableKeyMapping = true;
+    remapCapsLockToControl = true;
+  };
+
+  # Set your username
+  users.users.nmajkic = {
+    home = "/Users/nmajkic";
+    shell = pkgs.zsh;
+  };
+
+  # Used for backwards compatibility
+  system.stateVersion = 5;
+}
