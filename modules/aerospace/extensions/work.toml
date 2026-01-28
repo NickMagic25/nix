@@ -1,0 +1,7 @@
+# Work-specific AeroSpace extensions
+# This file extends the base aerospace.toml configuration
+
+# Example: Add work-specific keybindings or settings here
+# [gaps]
+# inner.horizontal = 10
+# inner.vertical = 10

@@ -9,6 +9,9 @@
     ../../modules/ghostty/home.nix
   ];
 
+  # AeroSpace configuration - use home extension
+  aerospace.extension = "home";
+
   # Home Manager needs a bit of information about you and the paths it should manage
   home.username = "nmajkic";
   home.homeDirectory = "/Users/nmajkic";

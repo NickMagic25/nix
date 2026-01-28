@@ -1,0 +1,7 @@
+# Home-specific AeroSpace extensions
+# This file extends the base aerospace.toml configuration
+
+# Example: Add home-specific keybindings or settings here
+# [gaps]
+# inner.horizontal = 5
+# inner.vertical = 5
