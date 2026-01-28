@@ -6,7 +6,7 @@
   imports = [
     ../../modules/aerospace/home.nix
     ../../modules/neovim/home.nix
-    ../../modules/ghostty.nix
+    ../../modules/ghostty/home.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should manage
