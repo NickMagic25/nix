@@ -30,3 +30,13 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.apple.findmy'
 run = 'layout floating'
+
+# Always open Moonlight in floating mode
+[[on-window-detected]]
+if.app-id = 'com.moonlight-stream.Moonlight'
+run = 'layout floating'
+
+# Always open Weather in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.weather'
+run = 'layout floating'
