@@ -12,9 +12,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = [
-    'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/setup-workspaces.sh'
-]
+after-startup-command = []
 
 # Start AeroSpace at login
 start-at-login = true
@@ -132,30 +130,6 @@ alt-shift-7 = 'move-node-to-workspace 7'
 alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-0 = 'move-node-to-workspace 10'
-
-# Switch to workspace 1-10 on current monitor
-ctrl-shift-1 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 1'
-ctrl-shift-2 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 2'
-ctrl-shift-3 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 3'
-ctrl-shift-4 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 4'
-ctrl-shift-5 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 5'
-ctrl-shift-6 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 6'
-ctrl-shift-7 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 7'
-ctrl-shift-8 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 8'
-ctrl-shift-9 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 9'
-ctrl-shift-0 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/switch-workspace-on-monitor.sh 10'
-
-# Move window to workspace 1-10 on current monitor
-ctrl-alt-shift-1 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 1'
-ctrl-alt-shift-2 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 2'
-ctrl-alt-shift-3 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 3'
-ctrl-alt-shift-4 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 4'
-ctrl-alt-shift-5 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 5'
-ctrl-alt-shift-6 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 6'
-ctrl-alt-shift-7 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 7'
-ctrl-alt-shift-8 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 8'
-ctrl-alt-shift-9 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 9'
-ctrl-alt-shift-0 = 'exec-and-forget bash ~/.nix/nix/modules/aerospace/scripts/move-to-workspace-on-monitor.sh 10'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
