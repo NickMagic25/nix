@@ -4,6 +4,7 @@
 {
   imports = [
     ../../modules/aerospace
+    ../../modules/darwin/system-defaults.nix
   ];
 
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
@@ -34,36 +35,10 @@
     vim
   ];
 
-  # macOS system defaults
-  system.defaults = {
-    dock = {
-      autohide = false;
-      orientation = "bottom";
-      show-recents = false;
-    };
-
-    finder = {
-      AppleShowAllExtensions = true;
-      FXEnableExtensionChangeWarning = false;
-    };
-
-    NSGlobalDomain = {
-      AppleShowAllExtensions = true;
-      InitialKeyRepeat = 15;
-      KeyRepeat = 2;
-    };
-  };
-
-  # Keyboard and trackpad
-  system.keyboard = {
-    enableKeyMapping = true;
-    remapCapsLockToControl = true;
-  };
-
   # Set your username
   users.users.nmajkic = {
     home = "/Users/nmajkic";
-    shell = pkgs.zsh;
+    shell = "/bin/zsh";
   };
 
   # Used for backwards compatibility
