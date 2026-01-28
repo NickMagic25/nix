@@ -4,6 +4,7 @@
 {
   imports = [
     ../../modules/aerospace
+    ../../modules/ghostty
     ../../modules/darwin/system-defaults.nix
   ];
 
