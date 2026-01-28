@@ -42,7 +42,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nmajkic = import ./hosts/work-mac/home.nix;
+            home-manager.users.nicholas.majkic = import ./hosts/work-mac/home.nix;
           }
         ];
       };
