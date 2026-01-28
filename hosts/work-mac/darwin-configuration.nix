@@ -36,7 +36,7 @@
   ];
 
   # Set your username
-  users.users.nicholas.majkic = {
+  users.users."nicholas.majkic" = {
     home = "/Users/nicholas.majkic";
     shell = "/bin/zsh";
   };
