@@ -159,3 +159,8 @@ alt-shift-left = ['join-with left', 'mode main']
 alt-shift-down = ['join-with down', 'mode main']
 alt-shift-up = ['join-with up', 'mode main']
 alt-shift-right = ['join-with right', 'mode main']
+
+# Always open Finder in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'

@@ -1,7 +1,27 @@
 # Home-specific AeroSpace extensions
 # This file extends the base aerospace.toml configuration
 
-# Example: Add home-specific keybindings or settings here
-# [gaps]
-# inner.horizontal = 5
-# inner.vertical = 5
+# Always open Messages in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = 'layout floating'
+
+# Always open Home in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.Home'
+run = 'layout floating'
+
+# Always open Photos in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.Photos'
+run = 'layout floating'
+
+# Always open Reminders in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.reminders'
+run = 'layout floating'
+
+# Always open FaceTime in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.FaceTime'
+run = 'layout floating'
