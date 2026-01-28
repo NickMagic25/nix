@@ -28,7 +28,7 @@
   };
 
   # Set primary user for system defaults
-  system.primaryUser = "nmajkic";
+  system.primaryUser = "nicholas.majkic";
 
   # System packages
   environment.systemPackages = with pkgs; [
