@@ -31,6 +31,21 @@
           }
         ];
       };
+
+      # Work Mac configuration
+      work-mac = nix-darwin.lib.darwinSystem {
+        system = "aarch64-darwin"; # Change to "x86_64-darwin" for Intel Macs
+        modules = [
+          ./hosts/work-mac/darwin-configuration.nix
+
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.nmajkic = import ./hosts/work-mac/home.nix;
+          }
+        ];
+      };
     };
   };
 }
