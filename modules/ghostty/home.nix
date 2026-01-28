@@ -4,10 +4,8 @@
 {
   # Ghostty configuration file
   home.file.".config/ghostty/config".text = ''
-    # Theme - using a built-in theme
-    # Common options: tokyonight, catppuccin-mocha, nord, dracula, gruvbox-dark
-    # Or leave commented out to use default
-    # theme = tokyonight
+    # Theme
+    theme = tokyonight
 
     # Font settings
     font-family = "JetBrains Mono"
@@ -16,9 +14,17 @@
     # Window settings
     window-padding-x = 10
     window-padding-y = 10
+    background-opacity=0.95
 
     # macOS specific settings
     macos-titlebar-style = tabs
     macos-option-as-alt = true
+    macos-dock-drop-behavior = window
+
+    # Shell integration
+    shell-integration = zsh
+
+    quit-after-last-window-closed = true
+    window-colorspace = display-p3
   '';
 }
