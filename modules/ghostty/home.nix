@@ -5,7 +5,7 @@
   # Ghostty configuration file
   home.file.".config/ghostty/config".text = ''
     # Theme
-    theme = tokyonight night
+    theme = "tokyonight night"
 
     # Font settings
     font-family = "JetBrains Mono"
