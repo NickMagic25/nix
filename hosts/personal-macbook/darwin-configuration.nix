@@ -45,6 +45,7 @@
       "trivy"
       "flux-operator-mcp"
       "capacitor"
+      "btop"
     ];
 
     # Homebrew casks (GUI applications)
