@@ -18,6 +18,10 @@
       autoUpdate = false;
       cleanup = "none";  # Don't uninstall packages not in this config
     };
+    brews = [
+      "btop"
+      "fastfetch"
+    ]
   };
 
   # Add Homebrew to PATH (supports both Apple Silicon and Intel Macs)
