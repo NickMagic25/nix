@@ -46,6 +46,7 @@
       "flux-operator-mcp"
       "capacitor"
       "btop"
+      "fastfetch"
     ];
 
     # Homebrew casks (GUI applications)
