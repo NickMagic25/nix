@@ -47,6 +47,7 @@
       "capacitor"
       "btop"
       "fastfetch"
+      "uv"
     ];
 
     # Homebrew casks (GUI applications)
