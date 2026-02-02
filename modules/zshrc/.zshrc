@@ -1,5 +1,6 @@
 export TALOSCONFIG="~/.talos/config.yaml"
-export GPG_TTY=$(tty)export PATH="$HOME/.local/bin:$PATH"
+export GPG_TTY=$(tty)
+export PATH="$HOME/.local/bin:$PATH"
 
 code(){
     if [ $# -eq 0 ]; then
