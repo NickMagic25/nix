@@ -48,6 +48,8 @@
       "btop"
       "fastfetch"
       "uv"
+      "apko"
+      "melange"
     ];
 
     # Homebrew casks (GUI applications)
