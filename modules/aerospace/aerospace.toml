@@ -156,7 +156,7 @@ f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling
 backspace = ['close-all-windows-but-current', 'mode main']
 
 alt-shift-j = ['join-with left', 'mode main']
-alt-shift-k = ['join-with down, 'mode main']
+alt-shift-k = ['join-with down', 'mode main']
 alt-shift-i = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
