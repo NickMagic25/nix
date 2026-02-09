@@ -164,3 +164,8 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = 'layout floating'
+
+# Always open Calendar in floating mode
+[[on-window-detected]]
+if.app-id = 'com.apple.iCal'
+run = 'layout floating'
