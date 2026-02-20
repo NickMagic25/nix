@@ -31,7 +31,7 @@ default-root-container-layout = 'tiles'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
-#               tall monitor (anything higher than wide) gets vertical orientation
+#               tall monitor (anything higher than wide) gets vertical orientationÇÇÇÇÇÇÇ
 default-root-container-orientation = 'auto'
 
 # Possible values: (qwerty|dvorak)
@@ -82,6 +82,9 @@ outer.right =      0
 # Open Ghostty terminal with ctrl + enter shortcut
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
 alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
+
+# Open Chrome with ctrl + shift + c shortcut
+alt-shift-c = 'exec-and-forget open -na "Google Chrome"'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
