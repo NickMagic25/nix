@@ -10,7 +10,7 @@
     };
 
     finder = {
-      AppleShowAllExtensions = true;
+      AppleShowAllExtensions = false;
       FXEnableExtensionChangeWarning = false;
     };
 
@@ -18,6 +18,7 @@
       AppleShowAllExtensions = true;
       InitialKeyRepeat = 15;
       KeyRepeat = 2;
+      "com.apple.keyboard.fnState" = true;
     };
   };
 
