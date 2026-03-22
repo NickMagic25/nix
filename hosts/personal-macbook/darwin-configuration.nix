@@ -56,6 +56,7 @@
     casks = [
       "codex"
       "git-credential-manager"
+      "linearmouse"
     ];
 
     # Additional taps
