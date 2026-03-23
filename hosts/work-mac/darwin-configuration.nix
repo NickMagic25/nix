@@ -6,6 +6,7 @@
     ../../modules/aerospace
     ../../modules/ghostty
     ../../modules/darwin/system-defaults.nix
+    ../../modules/darwin/homebrew.nix
   ];
 
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
@@ -14,14 +15,7 @@
   # Enable and configure homebrew
   homebrew = {
     enable = true;
-    onActivation = {
-      autoUpdate = false;
-      cleanup = "none";  # Don't uninstall packages not in this config
-    };
-    brews = [
-      "btop"
-      "fastfetch"
-    ];
+
   };
 
   # Add Homebrew to PATH (supports both Apple Silicon and Intel Macs)
@@ -34,11 +28,6 @@
 
   # Set primary user for system defaults
   system.primaryUser = "nicholas.majkic";
-
-  # System packages
-  environment.systemPackages = with pkgs; [
-    vim
-  ];
 
   # Set your username
   users.users."nicholas.majkic" = {

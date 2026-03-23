@@ -30,4 +30,9 @@
     source = ../../modules/zshrc/.zshrc;
     force = true;  # Replace existing file
   };
+
+  home.file.".config/linearmouse/linearmouse.json" = {
+    source = ../../modules/linearmouse/linearmouse.json;
+    force = true;
+  };
 }

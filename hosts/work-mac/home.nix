@@ -23,4 +23,9 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
+
+  home.file.".config/linearmouse/linearmouse.json" = {
+    source = ../../modules/linearmouse/linearmouse.json;
+    force = true;
+  };
 }

@@ -6,6 +6,7 @@
     ../../modules/aerospace
     ../../modules/ghostty
     ../../modules/darwin/system-defaults.nix
+    ../../modules/darwin/homebrew.nix
   ];
 
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
@@ -14,10 +15,7 @@
   # Enable and configure homebrew
   homebrew = {
     enable = true;
-    onActivation = {
-      autoUpdate = true;
-      cleanup = "uninstall";  # Remove packages not in this config
-    };
+    onActivation.cleanup = "uninstall";
 
     # Homebrew formulae (CLI tools)
     brews = [
@@ -45,8 +43,6 @@
       "trivy"
       "flux-operator-mcp"
       "capacitor"
-      "btop"
-      "fastfetch"
       "uv"
       "apko"
       "melange"
@@ -56,7 +52,6 @@
     casks = [
       "codex"
       "git-credential-manager"
-      "linearmouse"
     ];
 
     # Additional taps
@@ -76,11 +71,6 @@
 
   # Set primary user for system defaults
   system.primaryUser = "nmajkic";
-
-  # System packages
-  environment.systemPackages = with pkgs; [
-    vim
-  ];
 
   # Set your username
   users.users.nmajkic = {
