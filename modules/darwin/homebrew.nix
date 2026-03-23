@@ -13,6 +13,14 @@
       "helmfile"
       "k3d"
       "k9s"
+      "kustomize"
+      "uv"
+      "apko"
+      "melange"
+      "terraform"
+      "terragrunt"
+      "tree"
+      "trivy"
     ];
 
     casks = [
