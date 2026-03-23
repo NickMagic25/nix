@@ -15,7 +15,10 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager }: {
+  outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager }:
+  let
+    nixpkgsConfig = { allowUnfree = true; };
+  in {
     darwinConfigurations = {
       # Personal MacBook Pro configuration
       personal-macbook = nix-darwin.lib.darwinSystem {
@@ -25,6 +28,7 @@
 
           home-manager.darwinModules.home-manager
           {
+            nixpkgs.config = nixpkgsConfig;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.nmajkic = import ./hosts/personal-macbook/home.nix;
@@ -40,6 +44,7 @@
 
           home-manager.darwinModules.home-manager
           {
+            nixpkgs.config = nixpkgsConfig;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users."nicholas.majkic" = import ./hosts/work-mac/home.nix;

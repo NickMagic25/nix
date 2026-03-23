@@ -4,13 +4,14 @@
   programs.vscode = {
     enable = true;
 
-    userSettings = {
-      "github.copilot.enable" = { "*" = false; };
-      "github.copilot.editor.enableAutoCompletions" = false;
-      "github.copilot.chat.enabled" = false;
-    };
+    profiles.default = {
+      userSettings = {
+        "github.copilot.enable" = { "*" = false; };
+        "github.copilot.editor.enableAutoCompletions" = false;
+        "github.copilot.chat.enabled" = false;
+      };
 
-    keybindings = [
+      keybindings = [
       {
         key = "shift+enter";
         command = "workbench.action.terminal.sendSequence";
@@ -25,6 +26,7 @@
         key = "cmd+g o";
         command = "git.push";
       }
-    ];
+      ];
+    };
   };
 }
