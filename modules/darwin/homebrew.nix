@@ -21,6 +21,8 @@
       "terragrunt"
       "tree"
       "trivy"
+      "mise"
+      "opentofu"
     ];
 
     casks = [
