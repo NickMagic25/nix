@@ -19,7 +19,7 @@
     brews = [
       "gitlab-ci-local"
       "glab"
-    ]
+    ];
 
   };
 
