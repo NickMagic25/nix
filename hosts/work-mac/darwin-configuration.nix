@@ -16,6 +16,11 @@
   homebrew = {
     enable = true;
 
+    brews = [
+      "gitlab-ci-local"
+      "glab"
+    ]
+
   };
 
   # Add Homebrew to PATH (supports both Apple Silicon and Intel Macs)

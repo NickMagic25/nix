@@ -34,6 +34,7 @@
       "talosctl"
       "flux-operator-mcp"
       "capacitor"
+      "act"
     ];
 
     # Homebrew casks (GUI applications)
