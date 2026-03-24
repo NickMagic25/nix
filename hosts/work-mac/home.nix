@@ -6,6 +6,7 @@
   imports = [
     ../../modules/aerospace/home.nix
     ../../modules/ghostty/home.nix
+    ../../modules/mise/home.nix
   ];
 
   # AeroSpace configuration - use work extension

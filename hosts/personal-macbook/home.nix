@@ -8,6 +8,7 @@
     ../../modules/neovim/home.nix
     ../../modules/ghostty/home.nix
     ../../modules/vscode/home.nix
+    ../../modules/mise/home.nix
   ];
 
   # AeroSpace configuration - use home extension
