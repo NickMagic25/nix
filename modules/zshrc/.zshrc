@@ -12,3 +12,6 @@ code(){
 
 # Added by Antigravity
 export PATH="$PATH:/Users/nmajkic/.antigravity/antigravity/bin"
+
+# mise 
+eval "$(mise activate zsh)"
