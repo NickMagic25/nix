@@ -6,6 +6,7 @@
 
     profiles.default = {
       userSettings = {
+        "git.confirmSync" = false;
         "github.copilot.enable" = { "*" = false; };
         "github.copilot.editor.enableAutoCompletions" = false;
         "github.copilot.chat.enabled" = false;
