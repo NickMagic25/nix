@@ -31,6 +31,7 @@
             nixpkgs.config = nixpkgsConfig;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
             home-manager.users.nmajkic = import ./hosts/personal-macbook/home.nix;
           }
         ];
