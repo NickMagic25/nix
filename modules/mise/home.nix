@@ -1,30 +1,30 @@
 # mise (rtx) - Home Manager configuration
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  # mise configuration file
-  home.file.".config/mise/config.toml".text = ''
-    # mise configuration
-    # See: https://mise.jdx.dev/configuration.html
+  options.mise.extraTasks = lib.mkOption {
+    type = lib.types.lines;
+    default = "";
+    description = "Extra TOML task definitions appended to the mise config (host-specific tasks).";
+  };
 
-    [settings]
-    experimental = false
-    verbose = false
+  config = {
+    home.file.".config/mise/config.toml".text = ''
+      # mise configuration
+      # See: https://mise.jdx.dev/configuration.html
 
-    # Auto-activate mise when entering directories with .mise.toml
-    activate_aggressive = true
+      [settings]
+      experimental = false
+      verbose = false
 
-    # Global tasks
-    [tasks.trivy-scan]
-    description = "Scan container image for vulnerabilities using Trivy"
-    run = "trivy image --vuln-severity-source nvd,auto $@"
+      # Auto-activate mise when entering directories with .mise.toml
+      activate_aggressive = true
 
-    [tasks.docker-build]
-    description = "Build a Dockerfile for current platform"
-    run = "docker buildx build --no-cache $@"
-    
-    [tasks.docker-buildx86]
-    description = "Build a Dockerfile for linux/amd64"
-    run = "docker buildx build --platform linux/amd64 --no-cache $@"
-  '';
+      # Global tasks
+      [tasks.trivy-scan]
+      description = "Scan container image for vulnerabilities using Trivy"
+      run = "trivy image --vuln-severity-source nvd,auto $@"
+
+    '' + config.mise.extraTasks;
+  };
 }

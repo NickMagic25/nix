@@ -25,6 +25,17 @@
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
+  mise.extraTasks = ''
+
+    [tasks.docker-build]
+    description = "Build a Dockerfile for current platform"
+    run = "docker buildx build --no-cache $@"
+
+    [tasks.docker-buildx86]
+    description = "Build a Dockerfile for linux/amd64"
+    run = "docker buildx build --platform linux/amd64 --no-cache $@"
+  '';
+
   home.file.".config/linearmouse/linearmouse.json" = {
     source = ../../modules/linearmouse/linearmouse.json;
     force = true;
