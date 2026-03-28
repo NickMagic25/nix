@@ -5,6 +5,7 @@
     enable = true;
 
     onActivation.autoUpdate = true;
+    onActivation.upgrade = true;
 
     brews = [
       "btop"
