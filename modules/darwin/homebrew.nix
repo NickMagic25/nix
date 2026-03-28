@@ -23,6 +23,8 @@
       "trivy"
       "mise"
       "opentofu"
+      "cosign"
+      "crane"
     ];
 
     casks = [
