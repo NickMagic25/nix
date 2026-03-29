@@ -26,6 +26,7 @@
       "opentofu"
       "cosign"
       "crane"
+      "bao"
     ];
 
     casks = [
