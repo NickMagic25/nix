@@ -15,3 +15,7 @@ export PATH="$PATH:/Users/nmajkic/.antigravity/antigravity/bin"
 
 # mise 
 eval "$(mise activate zsh)"
+
+# bao
+export BAO_ADDR="https://10.0.0.50:8200"
+export BAO_CACERT="$HOME/.openbao-ca.pem"
