@@ -9,6 +9,9 @@
     ../../modules/darwin/homebrew.nix
   ];
 
+  # Enable Apple Watch for sudo (personal laptop only)
+  security.pam.services.sudo_local.watchIdAuth = true;
+
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
   nix.enable = false;
 
