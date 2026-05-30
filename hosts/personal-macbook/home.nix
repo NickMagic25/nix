@@ -9,6 +9,7 @@
     ../../modules/ghostty/home.nix
     ../../modules/vscode/home.nix
     ../../modules/mise/home.nix
+    ../../modules/zshrc/home.nix
   ];
 
   # AeroSpace configuration - use home extension
@@ -26,12 +27,6 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
-
-  # Zsh configuration (shared across machines)
-  home.file.".zshrc" = {
-    source = ../../modules/zshrc/.zshrc;
-    force = true;  # Replace existing file
-  };
 
   home.file.".config/linearmouse/linearmouse.json" = {
     source = ../../modules/linearmouse/linearmouse.json;
