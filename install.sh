@@ -37,7 +37,7 @@ else
     echo "Detected system: $SYSTEM"
 
     # Build and activate nix-darwin
-    darwin-rebuild switch switch --flake ~/git/nix#personal-macbook
+    darwin-rebuild switch --flake ~/git/nix#personal-macbook
 
     echo ""
     echo "✓ nix-darwin installed successfully!"

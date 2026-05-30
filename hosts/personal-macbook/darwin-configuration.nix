@@ -55,7 +55,7 @@
 
   # Shell aliases
   environment.shellAliases = {
-    nix-reconcile = "sudo darwin-rebuild switch switch --flake github:NickMagic25/nix#personal-macbook";
+    nix-reconcile = "sudo darwin-rebuild switch --flake github:NickMagic25/nix#personal-macbook";
   };
 
   # Set primary user for system defaults
@@ -87,7 +87,7 @@
             echo "[$(date)] Starting nix-darwin rebuild" >> "$LOG"
             echo "$NOW" > "$STAMP"
             PATH=/nix/var/nix/profiles/default/bin:/opt/homebrew/bin:/usr/bin:/bin \
-              darwin-rebuild switch switch --flake github:NickMagic25/nix#personal-macbook >> "$LOG" 2>&1
+              darwin-rebuild switch --flake github:NickMagic25/nix#personal-macbook >> "$LOG" 2>&1
             echo "[$(date)] Rebuild finished (exit $?)" >> "$LOG"
           }
 

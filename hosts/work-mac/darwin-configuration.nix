@@ -28,7 +28,7 @@
 
   # Shell aliases
   environment.shellAliases = {
-    nix-reconcile = "sudo darwin-rebuild switch switch --flake github:NickMagic25/nix#work-mac";
+    nix-reconcile = "sudo darwin-rebuild switch --flake github:NickMagic25/nix#work-mac";
   };
 
   # Set primary user for system defaults
