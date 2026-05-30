@@ -22,7 +22,6 @@
       "age"
       "bfg"
       "flux"
-      "gemini-cli"
       "gh"
       "gnupg"
       "go"
@@ -35,6 +34,7 @@
       "flux-operator-mcp"
       "capacitor"
       "act"
+      "ansible"
     ];
 
     # Homebrew casks (GUI applications)
