@@ -11,7 +11,6 @@
 
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
   nix.enable = false;
-  security.pam.services.sudo_local.watchIdAuth = true
 
   # Enable and configure homebrew
   homebrew = {

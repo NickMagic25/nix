@@ -4,13 +4,10 @@
 
 {
   imports = [
-    ../../modules/aerospace/home.nix
     ../../modules/ghostty/home.nix
     ../../modules/mise/home.nix
+    ../../modules/linearmouse/home.nix
   ];
-
-  # AeroSpace configuration - use work extension
-  aerospace.extension = "work";
 
   # Home Manager needs a bit of information about you and the paths it should manage
   home.username = "nicholas.majkic";
@@ -36,8 +33,4 @@
     run = "docker buildx build --platform linux/amd64 --no-cache $@"
   '';
 
-  home.file.".config/linearmouse/linearmouse.json" = {
-    source = ../../modules/linearmouse/linearmouse.json;
-    force = true;
-  };
 }

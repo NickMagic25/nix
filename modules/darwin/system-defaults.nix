@@ -1,8 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  # Enable Touch ID for sudo
-  security.pam.services.sudo_local.touchIdAuth = true;
+  # Enable Touch ID amd WachID for sudo
+  security.pam.services.sudo_local = {
+    touchIdAuth = true;
+  };
 
   # macOS system defaults
   system.defaults = {

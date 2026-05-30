@@ -1,0 +1,30 @@
+{ lib, ... }:
+
+{
+  home.file.".config/linearmouse/linearmouse.json".text = builtins.toJSON {
+    "$schema" = "https://schema.linearmouse.app/0.10.4";
+    schemes = [
+      {
+        "if" = {
+          device = {
+            category = "mouse";
+            productID = "0xc547";
+            productName = "USB Receiver";
+            vendorID = "0x46d";
+          };
+        };
+        pointer = {
+          acceleration = 0;
+          disableAcceleration = false;
+          speed = 0.35;
+        };
+        scrolling = {
+          acceleration.vertical = 1;
+          distance.vertical = 4;
+          reverse.vertical = true;
+          speed.vertical = 0;
+        };
+      }
+    ];
+  };
+}
