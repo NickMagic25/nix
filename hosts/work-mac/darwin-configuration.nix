@@ -28,7 +28,7 @@
 
   # Shell aliases
   environment.shellAliases = {
-    nix-reconcile = "sudo nix run nix-darwin -- switch --flake github:NickMagic25/nix#work-mac --tarball-ttl 0";
+    nix-reconcile = "sudo nix run nix-darwin -- switch --flake github:NickMagic25/nix#work-mac --option tarball-ttl 0";
   };
 
   # Set primary user for system defaults
