@@ -5,8 +5,7 @@
   imports = [
     ../../modules/aerospace
     ../../modules/ghostty
-    ../../modules/darwin/system-defaults.nix
-    ../../modules/darwin/homebrew.nix
+    ../../modules/darwin
   ];
 
   # Disable nix-darwin's Nix management (using Determinate Systems Nix installer)
@@ -29,7 +28,6 @@
       "npq"
       "openjdk"
       "ripgrep"
-      "sops"
       "talosctl"
       "flux-operator-mcp"
       "capacitor"
@@ -45,7 +43,6 @@
 
     # Additional taps
     taps = [
-      "derailed/k9s"
       "fluxcd/tap"
     ];
   };

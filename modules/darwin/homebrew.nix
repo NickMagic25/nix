@@ -18,7 +18,6 @@
       "uv"
       "apko"
       "melange"
-      "terraform"
       "terragrunt"
       "tree"
       "trivy"
@@ -26,11 +25,15 @@
       "opentofu"
       "cosign"
       "crane"
-      "openbao"
+      "sops"
     ];
 
     casks = [
       "linearmouse"
+    ];
+
+    taps = [
+      "derailed/k9s"
     ];
   };
 
