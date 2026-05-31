@@ -22,7 +22,7 @@
     darwinConfigurations = {
       # Personal MacBook Pro configuration
       personal-macbook = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin"; # Change to "x86_64-darwin" for Intel Macs
+        system = "aarch64-darwin";
         modules = [
           ./hosts/personal-macbook/darwin-configuration.nix
 
@@ -39,7 +39,7 @@
 
       # Work Mac configuration
       work-mac = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin"; # Change to "x86_64-darwin" for Intel Macs
+        system = "aarch64-darwin";
         modules = [
           ./hosts/work-mac/darwin-configuration.nix
 
