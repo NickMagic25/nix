@@ -3,7 +3,10 @@
 {
   # Enable Touch ID amd WachID for sudo
   security.pam.services.sudo_local = {
+    enable = true;
     touchIdAuth = true;
+    reattach = true;
+    watchIdAuth = true;
   };
 
   # macOS system defaults
