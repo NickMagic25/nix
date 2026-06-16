@@ -26,6 +26,7 @@
       mode.main.binding = {
         alt-enter = "exec-and-forget open -n /Applications/Ghostty.app";
         alt-shift-c = ''exec-and-forget open -na "Google Chrome"'';
+        alt-shift-backspace = ''exec-and-forget open -na "Codex"'';
         alt-slash = "layout tiles horizontal vertical";
         alt-comma = "layout accordion horizontal vertical";
         alt-f = "layout floating tiling";
