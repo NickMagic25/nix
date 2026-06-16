@@ -14,10 +14,10 @@
       key-mapping.preset = "qwerty";
       on-focused-monitor-changed = ["move-mouse monitor-lazy-center"];
       workspace-to-monitor-force-assignment = {
-        q = "secondary";
-        w = "secondary";
-        e = "secondary";
-        r = "secondary";
+        q = "dell";
+        w = "dell";
+        e = "dell";
+        r = "dell";
         a = "built-in";
         s = "built-in";
         d = "built-in";
