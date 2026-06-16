@@ -21,7 +21,6 @@
         a = "built-in";
         s = "built-in";
         d = "built-in";
-        f = "built-in";
       };
 
       gaps = {
@@ -66,7 +65,6 @@
         alt-a = "workspace a";
         alt-s = "workspace s";
         alt-d = "workspace d";
-        alt-f = "workspace f";
         alt-shift-1 = "move-node-to-workspace 1";
         alt-shift-2 = "move-node-to-workspace 2";
         alt-shift-3 = "move-node-to-workspace 3";
@@ -84,7 +82,6 @@
         alt-shift-a = "move-node-to-workspace a";
         alt-shift-s = "move-node-to-workspace s";
         alt-shift-d = "move-node-to-workspace d";
-        alt-shift-f = "move-node-to-workspace f";
         alt-backtick = "workspace --wrap-around next";
         alt-shift-backtick = "workspace --wrap-around prev";
         alt-tab = "workspace-back-and-forth";
