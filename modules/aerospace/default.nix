@@ -13,6 +13,16 @@
       default-root-container-orientation = "auto";
       key-mapping.preset = "qwerty";
       on-focused-monitor-changed = ["move-mouse monitor-lazy-center"];
+      workspace-to-monitor-force-assignment = {
+        q = "secondary";
+        w = "secondary";
+        e = "secondary";
+        r = "secondary";
+        a = "built-in";
+        s = "built-in";
+        d = "built-in";
+        f = "built-in";
+      };
 
       gaps = {
         inner.horizontal = 0;
