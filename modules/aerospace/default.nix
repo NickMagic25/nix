@@ -112,6 +112,7 @@
         { "if".app-id = "com.apple.reminders"; run = "layout floating"; }
         { "if".app-id = "com.apple.FaceTime"; run = "layout floating"; }
         { "if".app-id = "com.apple.findmy"; run = "layout floating"; }
+        { "if".app-id = "com.apple.shortcuts"; run = "layout floating"; }
         { "if".app-id = "com.moonlight-stream.Moonlight"; run = "layout floating"; }
         { "if".app-id = "com.apple.weather"; run = "layout floating"; }
       ];
