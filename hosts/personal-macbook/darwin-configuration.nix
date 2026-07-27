@@ -29,7 +29,6 @@
       "openjdk"
       "ripgrep"
       "talosctl"
-      "capacitor"
       "act"
       "ansible"
     ];
