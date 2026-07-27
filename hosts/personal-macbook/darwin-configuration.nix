@@ -29,7 +29,6 @@
       "openjdk"
       "ripgrep"
       "talosctl"
-      "flux-operator-mcp"
       "capacitor"
       "act"
       "ansible"
