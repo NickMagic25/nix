@@ -37,6 +37,7 @@
     casks = [
       "codex"
       "git-credential-manager"
+      "obsidian"
     ];
 
     # Additional taps
