@@ -30,10 +30,12 @@
 
     casks = [
       "linearmouse"
+      "cmux"
     ];
 
     taps = [
       "derailed/k9s"
+      "manaflow-ai/cmux"
     ];
   };
 
